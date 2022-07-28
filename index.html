@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookShelf Apps</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="w3-cursive w3-text-bold">
+<div class="w3-content" style="max-width:1400px">
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+    <h1 class="head_bar__title">Bookshelf Apps</h1>
+    <p>Simpan daftar buku bacaanmu disini</p>
+</header>
+
+<!-- Grid -->
+<main class="w3-row">
+
+    <section class="w3-col m6">
+        <section class="input_section w3-container w3-margin-bottom">
+            <h2 class="w3-bottombar w3-center">Masukkan Buku Baru</h2>
+            <form id="inputBook">
+                <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input class="w3-input w3-round w3-animate-input" id="inputBookTitle" type="text" autocomplete='off' required>
+                </div>
+                <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input class="w3-input w3-round w3-animate-input" id="inputBookAuthor" type="text" autocomplete='off' required>
+                </div>
+                <div class="input">
+                <label for="inputBookYear">Tahun Terbit</label>
+                <input class="w3-input w3-round w3-animate-input" id="inputBookYear" type="number" autocomplete='off' required>
+                </div>
+                <div class="w3-margin">
+                <label for="inputBookIsComplete">Selesai dibaca</label>
+                <input class="w3-check w3-round" id="inputBookIsComplete" type="checkbox" autocomplete='off'>
+                </div>
+                <button class="w3-bar w3-teal w3-margin-bottom w3-round w3-hover-shadow" id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+            </form>
+            </section>
+        </section>
+        
+        <section class="w3-col m6 w3-lefbar">
+            <section class="search_section w3-container w3-margin-bottom">
+                <h2 class="w3-bottombar w3-center">Cari Buku</h2>
+                <form id="searchBook">
+                    <label for="searchBookTitle">Judul</label>
+                    <div class="w3-row">
+                        <input class="w3-input w3-round w3-col m10 s9 w3-left" id="searchBookTitle" type="text">
+                        <button class="material-icons w3-col m2 s2 w3-right w3-xxlarge w3-text-teal w3-hover-teal" id="searchSubmit" type="submit">search</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="book_shelf w3-container w3-margin-bottom">
+                <h2 class="w3-teal  w3-round w3-center">Belum selesai dibaca</h2>
+                
+                <div id="incompleteBookshelfList" class="book_list">
+                </div>
+            </section>
+            
+            <section class="book_shelf w3-container">
+                <h2 class="w3-teal  w3-round w3-center">Selesai dibaca</h2>
+                
+                <div id="completeBookshelfList" class="book_list">
+                </div>
+            </section>
+        </section>
+
+<!-- END GRID -->
+    </main>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding w3-center">
+    <p>
+        dibuat dengan <i class="material-icons">favorite</i> aldiRahmaddani 
+        <i class="material-icons">copyright</i> 2022.
+    </p>
+</footer>
+
+<script src="storage.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

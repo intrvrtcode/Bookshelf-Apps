@@ -1,0 +1,31 @@
+body {
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+h1, h2 {
+    text-shadow:1px 1px 0 #444;
+}
+span:hover {
+    cursor: pointer;
+}
+footer > p > i.material-icons {
+    vertical-align:bottom;
+}
+footer > p > i:nth-child(1) {
+    color: red;
+}
+footer {
+    margin-top: 32px;
+}
+#searchSubmit {
+    border: none;
+}
+.input input {
+    width: 70%;
+}
+
